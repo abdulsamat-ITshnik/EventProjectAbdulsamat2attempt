@@ -1,90 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <title>KTL Football Invite</title>
+    <meta charset="UTF-8">
+    <title>FC Barcelona 2026</title>
     <style>
         body {
-            background-color: #cccccc;
-            font-family: sans-serif;
+            font-family: 'Verdana', sans-serif;
+            background-color: #ffffff;
+            color: #333;
             margin: 0;
-        }
-
-        .card-container {
-            background-color: gray;
-            height: 600px;
-            overflow: auto;
-            position: relative;
-            border: 15px solid cyan;
             padding: 20px;
+            transition: 0.3s;
         }
-
-        .badge {
-            position: fixed;
-            top: 10px;
-            z-index: 5;
+        header {
+            background-color: #a50044;
+            color: #edbb00;
+            padding: 30px;
+            text-align: center;
+            border-radius: 15px;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #004d98;
             font-weight: bold;
-            float: both;
-            background-color: #d9534f;
-            color: white;
-            padding: 5px;
         }
-
-        h1 {
-            color: black;
-            margin-bottom: 30px;
+        section {
+            background: #f4f4f4;
+            padding: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            width: 85%;
+            border-radius: 12px;
+            overflow: hidden;
         }
-
-        h1 span {
-            color: cyan;
+        .barcafannumber1{
+            width: 100px;
+            float: left;
+            margin-right: 20px;
+            border-radius: 10px;
+            border: 4px solid #004d98;
+          
         }
-
-        .event-details {
-            color: black;
-        }
-
-        .description {
-            margin-top: 20px;
-            height: 100px;
-            overflow: auto;
-            background-color: pink;
-            border: 7px solid rgb(138, 55, 66);
-        }
-
-        .invitation-button {
-            background-color: #27ae60;
-            color: white;
-            border: none;
-            padding: 15px;
+        table {
             width: 100%;
+            border-collapse: collapse;
             margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #bbb;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+          background-color: #004d98;
+          color: white;
+          }
+        
+        .dark-mode {
+          background-color: #121212;
+          color: #f0f0f0;
+          }
+        .dark-mode section {
+          background-color: #1e1e1e;
+          border: 1px solid #333;
+        }
+
+        #secret { 
+          display:none;
+          margin-top: 15px;
+          font-weight: bold;
+          color: #a50044;
+          }
+        
+        button {
+          padding: 10px;
+        cursor: pointer;
+        border-radius: 5px; 
+        border: none;
+        background: #a50044;
+        color: white;
+        }
+        .footerrr {
+          font-weight:bold ;
+          text-align: center;
         }
     </style>
 </head>
 <body>
 
-    <div class="card-container">
-        <div class="badge">FINAL MATCH</div>
-        
-        <h1>KTL Football <span>League Final Game</span></h1>
-        
-        <div class="event-details">
-            <div><strong>Time:</strong> Tuesday, April 28, 17:10</div>
-            <div><strong>Location:</strong> KTL Main Arena, Pitch 2</div>
-        </div>
+    <header>
+        <h1 id="topHeading">FC Barcelona Hub</h1>
+        <p>May 2026 Season Finale</p>
+    </header>
 
-        <div class="description">
-            The season ends here. Two teams, one trophy. Astana and Ordasy. 
-            One team held the power since the beginning, and the other one 
-            made a sensation going to the final while being considered 
-            underdogs. What an intense match is going to take place in 
-            our magnificent KarKTL League. Everyone is welcome!!!
-            
-            yes yes yes
-        </div>
+    <nav>
+        <a href="#news">Who Is Barca's N1 Fan?</a>
+        <a href="#stats">League</a>
+        <a href="#join">Fan Zone</a>
+    </nav>
 
-        <button class="invitation-button">JOIN US AND SUPPORT ASTANA</button>
-    </div>
+    <section id="news">
+        <h2>Camp Nou Completion</h2>
+        <img src="https://i.ibb.co.com/jPvD5vGK/20260504-111602.jpg" alt="Abdulsamatbarcafan" class="barcafannumber1">
+        <p>
+            As of May 2026, the stadium is almost finished. LaLiga is won, and all the fans are pleased by the success of their favorite club. For example, this young man here. Abdulsamat is really happy being a barca fan since he started getting interested in football despite all the adverse circumstances his team overcame.
+        </p>
+        <button onclick="doTheme()">Toggle Dark Mode</button>
+        <button onclick="doReveal()">Show Final Stats</button>
+        <div id="secret">Final Result: 98 Points, 31 Wins!</div>
+    </section>
 
+    <section id="stats">
+        <h2>La Liga Final Table (May 2026)</h2>
+        <table>
+            <tr><th>Pos</th><th>Team</th><th>W</th><th>L</th><th>Pts</th></tr>
+            <tr><td>1</td><td>FC Barcelona</td><td>31</td><td>2</td><td>98</td></tr>
+            <tr><td>2</td><td>Real Madrid</td><td>27</td><td>5</td><td>87</td></tr>
+            <tr><td>3</td><td>Atlético</td><td>23</td><td>7</td><td>79</td></tr>
+            <tr><td>4</td><td>Villarreal</td><td>21</td><td>9</td><td>71</td></tr>
+            <tr><td>5</td><td>Girona</td><td>19</td><td>11</td><td>65</td></tr>
+            <tr><td>6</td><td>Betis</td><td>17</td><td>13</td><td>59</td></tr>
+            <tr><td>7</td><td>Sociedad</td><td>15</td><td>15</td><td>52</td></tr>
+            <tr><td>8</td><td>Athletic</td><td>14</td><td>16</td><td>48</td></tr>
+            <tr><td>9</td><td>Valencia</td><td>12</td><td>18</td><td>42</td></tr>
+            <tr><td>10</td><td>Sevilla</td><td>10</td><td>20</td><td>36</td></tr>
+        </table>
+    </section>
+
+    <section id="join">
+        <h2>Fan Greeting</h2>
+        <input type="text" id="nameBox" placeholder="Enter name...">
+        <button onclick="doGreet()">Say Hello</button>
+        <hr>
+        <input type="text" placeholder="Feedback...">
+        <button onclick="doAlert()">Submit</button>
+    </section>
+
+    <footer class= "footerrr"><p>I am exhausted</p></footer>
+
+    <script>
+        function doGreet() {
+            var n = document.getElementById('nameBox').value;
+            if (n !== "") {
+                document.getElementById('topHeading').innerText = "Hello there Barca fan, " + n + "!";
+            } else {
+                alert("You think I am stupid?");
+            }
+        }
+
+        function doTheme() {
+            document.body.classList.toggle('dark-mode');
+        }
+
+        function doAlert() {
+            alert("Feedback sent for May 2026 season!");
+        }
+
+        function doReveal() {
+            var s = document.getElementById('secret');
+            s.style.display = 'block';
+            s.innerHTML = "May 2026 Update: SPAIN'S BEST TEAM OAT!";
+        }
+    </script>
 </body>
 </html>
